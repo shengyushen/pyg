@@ -1,0 +1,5 @@
+docker pull pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
+nvidia-docker run -it --ipc=host -v /root/ssy:/root/ssy --name ssyPYG  pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
+nvidia-docker start ssyPYG
+nvidia-docker exec -it ssyPYG /bin/bash
+
